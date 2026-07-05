@@ -1,0 +1,10 @@
+<div class="book-grid">
+  @for (book of books(); track book.title) {
+    <div class="book-card">
+      <h3>{{ book.title }}</h3>
+      <p class="author">by {{ book.author }}</p>
+      <span class="difficulty-badge">{{ book.difficulty }}</span>
+      <p class="chapters">{{ book.chapterCount }} chapters</p>
+    </div>
+  }
+</div>
