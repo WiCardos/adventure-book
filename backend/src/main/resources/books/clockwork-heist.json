@@ -1,0 +1,80 @@
+{
+  "title": "The Clockwork Heist",
+  "author": "Delphine Argent",
+  "difficulty": "MEDIUM",
+  "sections": [
+    {
+      "id": 1,
+      "text": "You stand before the Ironvale Clocktower at midnight, hired to steal the Regent's Cog before dawn. The main door is guarded; a drainpipe offers another way up.",
+      "type": "BEGIN",
+      "options": [
+        { "description": "Climb the drainpipe", "gotoId": 10 },
+        { "description": "Bluff your way past the guard", "gotoId": 20 }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The pipe groans under your weight but holds. You reach a narrow window, unlatched.",
+      "type": "NODE",
+      "options": [
+        { "description": "Slip inside quietly", "gotoId": 30 },
+        {
+          "description": "Force the window open quickly",
+          "gotoId": 30,
+          "consequence": { "type": "LOSE_HEALTH", "value": "2", "text": "The frame splinters, cutting your palm." }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "You claim to be the Regent's clockwright. The guard studies you a moment too long.",
+      "type": "NODE",
+      "options": [
+        {
+          "description": "Hold your nerve",
+          "gotoId": 40
+        },
+        {
+          "description": "Break into a run",
+          "gotoId": 40,
+          "consequence": { "type": "LOSE_HEALTH", "value": "4", "text": "The guard's baton catches your shoulder before you break free." }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Inside, the tower's gears fill the air with ticking. A maintenance ladder leads up toward the mechanism room.",
+      "type": "NODE",
+      "options": [
+        { "description": "Climb toward the mechanism room", "gotoId": 50 }
+      ]
+    },
+    {
+      "id": 40,
+      "text": "You're through the door and into the tower proper, heart pounding. Stairs spiral upward into the dark.",
+      "type": "NODE",
+      "options": [
+        { "description": "Climb toward the mechanism room", "gotoId": 50 }
+      ]
+    },
+    {
+      "id": 50,
+      "text": "The Regent's Cog sits exposed in the central mechanism, still turning. Removing it will stop the tower's clock entirely.",
+      "type": "NODE",
+      "options": [
+        { "description": "Snatch the cog and run", "gotoId": 60 },
+        { "description": "Look for a way to swap it without stopping the mechanism", "gotoId": 70 }
+      ]
+    },
+    {
+      "id": 60,
+      "text": "The clock shudders to a stop behind you as you flee into the night, cog in hand. Ironvale will wake to silence \u2014 and a very short list of suspects.",
+      "type": "END"
+    },
+    {
+      "id": 70,
+      "text": "You find a brass replica in your pack, made just for this. The swap is seamless; the tower never misses a tick, and neither does your escape.",
+      "type": "END"
+    }
+  ]
+}

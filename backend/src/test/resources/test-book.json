@@ -1,0 +1,27 @@
+{
+  "title": "Test Book",
+  "author": "Test Author",
+  "difficulty": "EASY",
+  "type": "",
+  "sections": [
+    {
+      "id": "500",
+      "text": "The beginning.",
+      "type": "BEGIN",
+      "options": [
+        {
+        "description": "Threaten him for more information",
+        "gotoId": 200,
+        "consequence": {
+          "type": "LOSE_HEALTH",
+          "value": "3",
+          "text": "The pirate lunges at you with a hidden dagger before the guards subdue him."
+        }
+      },
+        {
+          "description": "Leave him and return to the deck",
+          "gotoId": 1
+        }]
+    }
+  ]
+}

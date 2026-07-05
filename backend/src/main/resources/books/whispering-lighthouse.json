@@ -1,0 +1,77 @@
+{
+  "title": "The Whispering Lighthouse",
+  "author": "Corwin Ashgrove",
+  "difficulty": "EASY",
+  "sections": [
+    {
+      "id": 1,
+      "text": "A storm drives your fishing boat onto the rocks near an old lighthouse. Its lamp still burns, though the keeper vanished years ago.",
+      "type": "BEGIN",
+      "options": [
+        { "description": "Climb the spiral stairs toward the light", "gotoId": 10 },
+        { "description": "Search the keeper's cottage at the base", "gotoId": 20 }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Halfway up, a rotted step gives way beneath you.",
+      "type": "NODE",
+      "options": [
+        {
+          "description": "Grab the railing and pull yourself up",
+          "gotoId": 30
+        },
+        {
+          "description": "Leap to the landing above",
+          "gotoId": 40,
+          "consequence": { "type": "LOSE_HEALTH", "value": "3", "text": "You land awkwardly, wrenching your knee." }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "The cottage is dusty but undisturbed. A logbook lies open on the desk, its last entry unfinished.",
+      "type": "NODE",
+      "options": [
+        { "description": "Read the logbook", "gotoId": 50 },
+        { "description": "Head up to the lamp room instead", "gotoId": 10 }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "You reach the lamp room, breathless. The great lens turns slowly, powered by nothing you can see.",
+      "type": "NODE",
+      "options": [
+        { "description": "Touch the lens", "gotoId": 60 },
+        { "description": "Look for the mechanism below it", "gotoId": 70 }
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Nursing your knee, you reach the lamp room landing anyway.",
+      "type": "NODE",
+      "options": [
+        { "description": "Touch the lens", "gotoId": 60 },
+        { "description": "Look for the mechanism below it", "gotoId": 70 }
+      ]
+    },
+    {
+      "id": 50,
+      "text": "The log describes a light that 'shows sailors the way they most need, not the way they asked for.' You feel drawn upward.",
+      "type": "NODE",
+      "options": [
+        { "description": "Climb to the lamp room", "gotoId": 10 }
+      ]
+    },
+    {
+      "id": 60,
+      "text": "The moment your fingers brush the glass, you see your own boat, safely home, years from now.",
+      "type": "END"
+    },
+    {
+      "id": 70,
+      "text": "Beneath the lens, gears turn on their own. You realize the lighthouse was never waiting for its keeper to return \u2014 it was waiting for someone to finally let it rest.",
+      "type": "END"
+    }
+  ]
+}
