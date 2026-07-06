@@ -1,0 +1,86 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  padding: 0 16px;
+}
+
+.filters input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.chip-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 6px 16px;
+  border: 1px solid #b08d57;
+  border-radius: 999px;
+  background: white;
+  color: #6b4f2a;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+
+.chip:hover {
+  background: #f5ecd9;
+}
+
+.chip.active {
+  background: #b08d57;
+  color: white;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.book-card {
+  border: 1px solid #e0d8c8;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fffdf8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.book-card h3 {
+  margin: 0 0 6px;
+  color: #3a2e1f;
+}
+
+.book-card .author {
+  color: #777;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.difficulty-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: #eee6d6;
+  color: #6b4f2a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.chapters {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0;
+}

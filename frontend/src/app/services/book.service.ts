@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { BookSummary } from '../models/book-summary.model';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class BookService {
@@ -9,7 +9,14 @@ export class BookService {
 
   constructor(private http: HttpClient) {}
 
-  getBooks(): Observable<BookSummary[]> {
-    return this.http.get<BookSummary[]>(this.baseUrl);
+  getBooks(search?: string, difficulty?: string): Observable<BookSummary[]> {
+    let params = new HttpParams();
+    if (search) {
+      params = params.set('search', search);
+    }
+    if (difficulty) {
+      params = params.set('difficulty', difficulty);
+    }
+    return this.http.get<BookSummary[]>(this.baseUrl, { params });
   }
 }

@@ -1,3 +1,27 @@
+<div class="filters">
+  <input
+    type="text"
+    placeholder="Search adventures..."
+    [value]="searchTerm()"
+    (input)="onSearchChange($any($event.target).value)"
+  />
+
+  <div class="chip-row">
+    <button
+      class="chip"
+      [class.active]="selectedDifficulty() === null"
+      (click)="onDifficultyChange(null)"
+    >All</button>
+    @for (level of ['EASY', 'MEDIUM', 'HARD']; track level) {
+      <button
+        class="chip"
+        [class.active]="selectedDifficulty() === level"
+        (click)="onDifficultyChange(level)"
+      >{{ level }}</button>
+    }
+  </div>
+</div>
+
 <div class="book-grid">
   @for (book of books(); track book.title) {
     <div class="book-card">

@@ -34,4 +34,22 @@ describe('BookService', () => {
     expect(req.request.method).toBe('GET');
     req.flush(mockBooks);
   });
+
+  it('fetches books with search and difficulty query params', () => {
+    const mockBooks: BookSummary[] = [
+      { title: 'Lighthouse Tale', author: 'Corwin', difficulty: 'EASY', chapterCount: 8 },
+    ];
+
+    service.getBooks('lighthouse', 'EASY').subscribe((books) => {
+      expect(books).toEqual(mockBooks);
+    });
+
+    const req = httpMock.expectOne(
+      (r) => r.url === 'http://localhost:8080/books' &&
+        r.params.get('search') === 'lighthouse' &&
+        r.params.get('difficulty') === 'EASY'
+    );
+    expect(req.request.method).toBe('GET');
+    req.flush(mockBooks);
+  });
 });
