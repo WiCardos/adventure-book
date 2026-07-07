@@ -1,0 +1,67 @@
+import { TestBed } from '@angular/core/testing';
+import { describe, it, expect, vi } from 'vitest';
+import { of } from 'rxjs';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { GamePlayComponent } from './game-play.component';
+import { GameService } from '../../services/game.service';
+import { GameStartResult, SectionView } from '../../models/section-view.model';
+
+describe('GamePlayComponent', () => {
+  const mockStartResult: GameStartResult = {
+    sessionId: 'abc-123',
+    section: {
+      text: 'Start of the adventure',
+      options: [{ description: 'Go north', gotoId: 2 }],
+      isEnding: false,
+    },
+  };
+
+  function setup(title = 'Test Book') {
+    const mockGameService = {
+      startGame: vi.fn().mockReturnValue(of(mockStartResult)),
+      makeChoice: vi.fn(),
+    };
+    const mockRoute = {
+      snapshot: { paramMap: convertToParamMap({ title }) },
+    };
+
+    TestBed.configureTestingModule({
+      imports: [GamePlayComponent],
+      providers: [
+        { provide: GameService, useValue: mockGameService },
+        { provide: ActivatedRoute, useValue: mockRoute },
+      ],
+    });
+
+    const fixture = TestBed.createComponent(GamePlayComponent);
+    fixture.detectChanges();
+
+    return { fixture, mockGameService };
+  }
+
+  it('starts a game with the title from the route and renders the section', () => {
+    const { fixture, mockGameService } = setup('Test Book');
+
+    expect(mockGameService.startGame).toHaveBeenCalledWith('Test Book');
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('Start of the adventure');
+    expect(compiled.querySelectorAll('.option-button').length).toBe(1);
+  });
+
+  it('advances to the next section when an option is chosen', () => {
+    const { fixture, mockGameService } = setup();
+    const nextSection: SectionView = { text: 'The end', options: [], isEnding: true };
+    mockGameService.makeChoice.mockReturnValue(of(nextSection));
+
+    const component = fixture.componentInstance;
+    component.choose(2);
+    fixture.detectChanges();
+
+    expect(mockGameService.makeChoice).toHaveBeenCalledWith('abc-123', 2);
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('The end');
+    expect(compiled.textContent).toContain('The End.');
+  });
+});

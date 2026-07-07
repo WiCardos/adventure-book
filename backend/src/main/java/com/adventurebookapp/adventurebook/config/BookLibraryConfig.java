@@ -1,5 +1,6 @@
 package com.adventurebookapp.adventurebook.config;
 
+import com.adventurebookapp.adventurebook.game.GameService;
 import com.adventurebookapp.adventurebook.loading.BookLibrary;
 import com.adventurebookapp.adventurebook.loading.BookLoader;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
@@ -35,5 +36,10 @@ public class BookLibraryConfig {
                 .toList();
 
         return new BookLibrary(bookLoader, bookValidator, bookPaths);
+    }
+
+    @Bean
+    public GameService gameService(BookLibrary bookLibrary) {
+        return new GameService(bookLibrary);
     }
 }

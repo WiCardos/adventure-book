@@ -1,11 +1,15 @@
 # Adventure Book Application
 
 An interactive adventure book application built for the Pictet Technologies technical exercise.
-Users can browse available books, search by title/author, and filter by difficulty.
-(Gameplay itself — starting and playing through a book — is a separate objective, in progress.)
 
 - **Backend:** Java 21, Spring Boot 4.1.0, Maven
 - **Frontend:** Angular 22, TypeScript, Vitest
+
+## Objective status
+
+- **Objective 1 (list, search, filter):** complete.
+- **Objective 2 (start a game, basic navigation, no consequences):** complete. Health/consequences (Objective 3) are intentionally not yet implemented — choosing an option currently only moves between sections.
+- **Objectives 3–5:** not attempted, given time constraints.
 
 ## Project structure
 
@@ -30,6 +34,8 @@ cd backend
 ```
 
 The API starts on `http://localhost:8080`. Confirm it's running by visiting `http://localhost:8080/books` in a browser — it should return a JSON list of available books.
+
+Game endpoints (`POST /games`, `POST /games/{sessionId}/choices`) require a JSON body and are best tested via Postman, curl, or through the frontend itself rather than a browser address bar.
 
 ### Backend tests
 
@@ -61,3 +67,5 @@ npm test
 - Of the four book files originally provided, three (`crystal-caverns`, `pirates-jade-sea`, `the-prisoner`) are each excluded by the same validation rule — a deliberately unreachable dead-end node with no options — and `dragon-quest.json` is an empty file. Two additional books (`whispering-lighthouse`, `clockwork-heist`) were added to demonstrate a fully working library.
 - Search matches title or author, case-insensitively; difficulty filtering is exact-match. Both can be combined.
 - Search input is debounced (300ms) on the frontend to avoid firing a request on every keystroke.
+- Game sessions are held in-memory on the backend (a thread-safe map, keyed by a generated session id), not persisted to a database. A session is lost if the backend restarts; this is a deliberate scope limit, not an oversight — persistence is Objective 4.
+- A choice is validated against the current section's own options before advancing, so a client cannot jump to an arbitrary section by submitting an arbitrary `gotoId`.

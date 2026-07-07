@@ -29,6 +29,7 @@
       <p class="author">by {{ book.author }}</p>
       <span class="difficulty-badge">{{ book.difficulty }}</span>
       <p class="chapters">{{ book.chapterCount }} chapters</p>
+      <button class="begin-quest" (click)="beginQuest(book.title)">Begin Quest</button>
     </div>
   }
 </div>

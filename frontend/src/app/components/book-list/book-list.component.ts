@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { BookService } from '../../services/book.service';
 import { BookSummary } from '../../models/book-summary.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-list',
@@ -28,7 +29,7 @@ export class BookListComponent implements OnInit {
     { initialValue: [] }
   );
 
-  constructor(private bookService: BookService) {}
+  constructor(private bookService: BookService, private router: Router) {}
 
   ngOnInit(): void {
     this.emitCurrentFilters();
@@ -46,5 +47,9 @@ export class BookListComponent implements OnInit {
 
   private emitCurrentFilters(): void {
     this.filters$.next({ search: this.searchTerm(), difficulty: this.selectedDifficulty() });
+  }
+
+  beginQuest(title: string): void {
+    this.router.navigate(['/play', title]);
   }
 }
