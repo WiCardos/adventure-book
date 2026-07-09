@@ -4,6 +4,7 @@ import com.adventurebookapp.adventurebook.model.Book;
 import com.adventurebookapp.adventurebook.model.Difficulty;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,6 +24,7 @@ public class BookLibrary {
         this.bookResourcePaths = bookResourcePaths;
     }
 
+    @Cacheable("books")
     public List<Book> getAllBooks() {
         List<Book> books = new ArrayList<>();
         for (String path : bookResourcePaths) {
