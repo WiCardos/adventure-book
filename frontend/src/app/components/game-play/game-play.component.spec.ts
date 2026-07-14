@@ -13,6 +13,8 @@ describe('GamePlayComponent', () => {
       text: 'Start of the adventure',
       options: [{ description: 'Go north', gotoId: 2 }],
       isEnding: false,
+      health: 10,
+      isDead: false
     },
   };
 
@@ -51,7 +53,7 @@ describe('GamePlayComponent', () => {
 
   it('advances to the next section when an option is chosen', () => {
     const { fixture, mockGameService } = setup();
-    const nextSection: SectionView = { text: 'The end', options: [], isEnding: true };
+    const nextSection: SectionView = { text: 'The end', options: [], isEnding: true, health: 10, isDead: false };
     mockGameService.makeChoice.mockReturnValue(of(nextSection));
 
     const component = fixture.componentInstance;

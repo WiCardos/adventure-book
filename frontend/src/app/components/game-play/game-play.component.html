@@ -1,12 +1,15 @@
 @if (section(); as current) {
   <div class="game-header">
     <button (click)="backToLibrary()">← Back to Library</button>
+    <span class="health-display">❤ {{ current.health }} / 20</span>
   </div>
 
   <div class="section-card">
     <p class="section-text">{{ current.text }}</p>
 
-    @if (current.isEnding) {
+    @if (current.isDead) {
+      <p class="ending-message death">You did not survive.</p>
+    } @else if (current.isEnding) {
       <p class="ending-message">The End.</p>
     } @else {
       <div class="options">

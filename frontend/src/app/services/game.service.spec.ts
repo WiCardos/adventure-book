@@ -24,7 +24,7 @@ describe('GameService', () => {
   it('starts a game with the given title', () => {
     const mockResult: GameStartResult = {
       sessionId: 'abc-123',
-      section: { text: 'Start', options: [{ description: 'Go', gotoId: 2 }], isEnding: false },
+      section: { text: 'Start', options: [{ description: 'Go', gotoId: 2 }], isEnding: false, health: 10, isDead: false },
     };
 
     service.startGame('Test Book').subscribe((result) => {
@@ -38,7 +38,7 @@ describe('GameService', () => {
   });
 
   it('makes a choice and returns the new section', () => {
-    const mockSection: SectionView = { text: 'End', options: [], isEnding: true };
+    const mockSection: SectionView = { text: 'End', options: [], isEnding: true, health: 10, isDead: false };
 
     service.makeChoice('abc-123', 2).subscribe((section) => {
       expect(section).toEqual(mockSection);
