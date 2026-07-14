@@ -4,6 +4,7 @@ import com.adventurebookapp.adventurebook.game.GameService;
 import com.adventurebookapp.adventurebook.loading.BookLibrary;
 import com.adventurebookapp.adventurebook.loading.BookLoader;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
@@ -14,6 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Configuration
+@EnableCaching
 public class BookLibraryConfig {
 
     @Bean

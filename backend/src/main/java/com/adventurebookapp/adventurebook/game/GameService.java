@@ -27,7 +27,7 @@ public class GameService {
         String sessionId = UUID.randomUUID().toString();
         sessions.put(sessionId, session);
 
-        return new GameStartResult(sessionId, SectionView.from(session.getCurrentSection()));
+        return new GameStartResult(sessionId, toSectionView(session));
     }
 
     public SectionView makeChoice(String sessionId, int gotoId) {
@@ -36,6 +36,10 @@ public class GameService {
             throw new NoSuchElementException("No active game session with id: " + sessionId);
         }
         session.choose(gotoId);
-        return SectionView.from(session.getCurrentSection());
+        return toSectionView(session);
+    }
+
+    private SectionView toSectionView(GameSession session) {
+        return SectionView.from(session.getCurrentSection(), session.getHealth(), session.isDead());
     }
 }

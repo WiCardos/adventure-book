@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9b3d643-55fe-4a7f-86f6-7660ea99dbcc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../AmigosCode/amigosservices/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AmigosCode/amigosservices/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AmigosCode/amigosservices/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AmigosCode/amigosservices/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AmigosCode/amigosservices/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AmigosCode/amigosservices/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/adventurebookapp/adventurebook/game/GameSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/adventurebookapp/adventurebook/game/GameSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project Euler/Problem 02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project Euler/Problem 02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Euler/Problem 02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project Euler/Problem 03" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Euler/Problem 03" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project Euler/Problem 54/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Euler/Problem 54/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/AbstractChallenge/AbstractChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/AbstractClassExercise/AbstractClassExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/AbstractClasses/AbstractClasses.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/AllAboutStrings/AllAboutStrings.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayAndArrayLists/ArrayAndArrayLists.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayChallenge/ArrayChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayListChallenge/ArrayListChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayLists/ArrayLists.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayLists/src/dev/lpa/lpa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayLists/src/dev/lpa/out/production/lpa/dev/lpa/lpa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArrayReferences/ArrayReferences.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ArraysProject/ArraysProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Autoboxing/Autoboxing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/AutoboxingChallenge/AutoboxingChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/BankingExercise/BankingExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/BillsBurgerChallenge/BillsBurgerChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/BillsBurgerExercise/BillsBurgerExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/CarpetCostCalculator/CarpetCostCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ChainingLambdas/ChainingLambdas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ClassesChallenge/ClassesChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ClassesPart1/ClassesPart1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/CollectionsMethods/CollectionsMethods.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/CollectionsOverview/CollectionsOverview.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Comparing/Comparing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ComplexNumber/ComplexNumber.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Composition/Composition.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/CompositionChallenge/CompositionChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ComputerFactory/ComputerFactory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ConstructorChallenge/ConstructorChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Cylinder/Cylinder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/DiagonalStar.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/src/DiagonalStar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DiagonalStar/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/DigitSumChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/out/production/DigitSumChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/DigitSumChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Encapsulation/Encapsulation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EncapsulationChallenge/EncapsulationChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EnumProject/EnumProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/EvenDigitSum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/out/production/EvenDigitSum/EvenDigitSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/out/production/EvenDigitSum/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/src/EvenDigitSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/EvenDigitSum/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/FactorPrinter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/src/FactorPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FactorPrinter/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/FirstLastDigitSum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/out/production/FirstLastDigitSum/FirstLastDigitSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/out/production/FirstLastDigitSum/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/src/FirstLastDigitSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FirstLastDigitSum/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/FlourPacker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/out/production/FlourPacker/FlourPacker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/out/production/FlourPacker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/src/FlourPacker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/FlourPacker/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GenericClassChallenge/GenericClassChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Generics/Generics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GenericsExtra/GenericsExtra.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/GreatestCommonDivisor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/out/production/GreatestCommonDivisor/GreatestCommonDivisor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/out/production/GreatestCommonDivisor/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/src/GreatestCommonDivisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/GreatestCommonDivisor/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/HelloWorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/out/production/HelloWorld/FirstClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/out/production/HelloWorld/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/out/production/HelloWorld/SecondClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/src/FirstClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/src/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/HelloWorld/src/SecondClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/out/production/IfKeywordAndCodeBlocks/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/out/production/IfKeywordAndCodeBlocks/MainChallenge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/IfKeywordAndCodeBlocks/src/MainChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Inheritance/Inheritance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/InheritanceChallenge/InheritanceChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/InputCalculator/InputCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/InterfaceChallenge/InterfaceChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/InterfaceExercise/InterfaceExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Interfaces/Interfaces.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/KeywordsAndExpressions.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/out/production/KeywordsAndExpressions/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/KeywordsAndExpressions/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LambdaExpressionChallenge/LambdaExpressionChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LambdaExpressions/LambdaExpressions.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LambdaIntro/LambdaIntro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/LargestPrime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/out/production/LargestPrime/LargestPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/out/production/LargestPrime/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/src/LargestPrime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LargestPrime/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/LastDigitChecker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/out/production/LastDigitChecker/LastDigitChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/out/production/LastDigitChecker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/src/LastDigitChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LastDigitChecker/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LinkedListChallenge/LinkedListChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LinkedLists/LinkedLists.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/LocalClassChallenge/LocalClassChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MethodReferenceChallenge/MethodReferenceChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MethodReferences/MethodReferences.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MinMaxChallenge/MinMaxChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MiniLambdaChallenges/MiniLambdaChallenges.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MinimumElementChallenge/MinimumElementChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MinimumElementExercise/MinimumElementExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MobilePhoneExercise/MobilePhoneExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/MultipleArrays/MultipleArrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NestedClasses/NestedClasses.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/NumberPalindrome.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberPalindrome/src/NumberPalindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/NumberToWords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/out/production/NumberToWords/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/out/production/NumberToWords/NumberToWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/NumberToWords/src/NumberToWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/OverloadedChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/out/production/OverloadedChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/OverloadedChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Packages/Packages.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PaintJob/PaintJob.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/PerfectNumber.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/out/production/PerfectNumber/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/out/production/PerfectNumber/PerfectNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PerfectNumber/src/PerfectNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Person/Person.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Playlist-InnerClassExercise/Playlist-InnerClassExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PlaylistExercise/PlaylistExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Point/Point.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Polymorphism/Polymorphism.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PolymorphismChallenge/PolymorphismChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PolymorphismExercise/PolymorphismExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/PoolArea/PoolArea.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ReadingUserInput/ReadingUserInput.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ReadingUserInputChallenge/ReadingUserInputChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ReadingUserInputChallengeAlternative/ReadingUserInputChallengeAlternative.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/RecordProject/RecordProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ReverseArrayExercise/ReverseArrayExercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/out/production/SecondsAndMinutesChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SecondsAndMinutesChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/SharedDigit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/out/production/SharedDigit/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/out/production/SharedDigit/SharedDigit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SharedDigit/src/SharedDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SimpleCalculator/SimpleCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SortedArray/SortedArray.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/StatementsWhiteSpaceAndIndenting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/out/production/StatementsWhiteSpaceAndIndenting/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StatementsWhiteSpaceAndIndenting/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StringFormatting/StringFormatting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StringOptions/StringOptions.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/StudentChallenge/StudentChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/Sum3And5Challenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/out/production/Sum3And5Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Sum3And5Challenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/SumOddRange.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/out/production/SumOddRange/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/out/production/SumOddRange/SumOddRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SumOddRange/src/SumOddRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/Switch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/out/production/Switch/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/Switch/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/SwitchChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/SwitchExpressionChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/out/production/SwitchExpressionChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/SwitchExpressionChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/TheForLoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/out/production/TheForLoop/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheForLoop/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/TheObjectClass/TheObjectClass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/out/production/ThePrimeNumberChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/ThePrimeNumberChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/UsingArrays/UsingArrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/VarArgs/VarArgs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WallArea/WallArea.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/WhileLoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoop/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/WhileLoopChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/out/production/WhileLoopChallenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy - Java Programming Masterclass updated to Java 17/WhileLoopChallenge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UpSkill/exemplo/src/main/webapp/WEB-INF/views/tarefas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../UpSkill/exemplo/src/main/webapp/WEB-INF/views/tarefas.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WiCardos&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:WiCardos/adventure-book.git&quot;,
+    &quot;accountId&quot;: &quot;fbbc50f9-7cc8-44cc-b134-0ba02882ddda&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3G3ZyMOpBMaQ7OvY7tsa26FMsPH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BookLibraryCachingTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameSessionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.adventurebook in adventure-book.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in adventure-book.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AdventureBookApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.BookListComponent (1).executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.BookListComponent.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.BookService.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.BookService.fetches books with search and difficulty query params.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikelmanson/Dropbox/Development/Java/Pictet Tech/adventure-book&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mikelmanson\Dropbox\Development\Java\Pictet Tech\adventure-book" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BookLibraryCachingTest">
+    <configuration name="BookLibraryCachingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventure-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adventurebookapp.adventurebook.loading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adventurebookapp.adventurebook.loading" />
+      <option name="MAIN_CLASS_NAME" value="com.adventurebookapp.adventurebook.loading.BookLibraryCachingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventure-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adventurebookapp.adventurebook.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adventurebookapp.adventurebook.web" />
+      <option name="MAIN_CLASS_NAME" value="com.adventurebookapp.adventurebook.web.GameControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventure-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adventurebookapp.adventurebook.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adventurebookapp.adventurebook.game" />
+      <option name="MAIN_CLASS_NAME" value="com.adventurebookapp.adventurebook.game.GameServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventure-book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adventurebookapp.adventurebook.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adventurebookapp.adventurebook.game" />
+      <option name="MAIN_CLASS_NAME" value="com.adventurebookapp.adventurebook.game.GameSessionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="adventurebook in adventure-book" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventure-book" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/backend/src/test/java/com/adventurebookapp/adventurebook" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdventureBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="adventure-book" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.adventurebookapp.adventurebook.AdventureBookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookLibraryCachingTest" />
+        <item itemvalue="JUnit.GameControllerTest" />
+        <item itemvalue="JUnit.adventurebook in adventure-book" />
+        <item itemvalue="JUnit.GameServiceTest" />
+        <item itemvalue="JUnit.GameSessionTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9b3d643-55fe-4a7f-86f6-7660ea99dbcc" name="Changes" comment="" />
+      <created>1783202473917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783202473917</updated>
+      <workItem from="1783202492514" duration="251000" />
+      <workItem from="1783264602726" duration="7032000" />
+      <workItem from="1783290520619" duration="4902000" />
+      <workItem from="1783298689818" duration="1878000" />
+      <workItem from="1783300589624" duration="298000" />
+      <workItem from="1783300914447" duration="182000" />
+      <workItem from="1783301122426" duration="922000" />
+      <workItem from="1783323464477" duration="17840000" />
+      <workItem from="1783414304066" duration="16750000" />
+      <workItem from="1783502550229" duration="5588000" />
+      <workItem from="1783622546689" duration="8035000" />
+      <workItem from="1783898033690" duration="104000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

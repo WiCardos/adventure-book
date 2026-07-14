@@ -28,7 +28,7 @@ class GameControllerTest {
 
     @Test
     void startGame_returnsSessionIdAndSection() throws Exception {
-        SectionView section = new SectionView("Start", List.of(new OptionView("Go", 2)), false);
+        SectionView section = new SectionView("Start", List.of(new OptionView("Go", 2)), false, 10, false);
         when(gameService.startGame("Test Book")).thenReturn(new GameStartResult("abc-123", section));
 
         mockMvc.perform(post("/games")
@@ -52,7 +52,7 @@ class GameControllerTest {
 
     @Test
     void makeChoice_returnsNewSection() throws Exception {
-        SectionView section = new SectionView("End", List.of(), true);
+        SectionView section = new SectionView("End", List.of(), true, 10, false);
         when(gameService.makeChoice("abc-123", 2)).thenReturn(section);
 
         mockMvc.perform(post("/games/abc-123/choices")
