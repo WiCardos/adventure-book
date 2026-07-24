@@ -1,6 +1,7 @@
 package com.adventurebookapp.adventurebook.config;
 
 import com.adventurebookapp.adventurebook.game.GameService;
+import com.adventurebookapp.adventurebook.game.SaveService;
 import com.adventurebookapp.adventurebook.loading.BookLibrary;
 import com.adventurebookapp.adventurebook.loading.BookLoader;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
@@ -41,7 +42,12 @@ public class BookLibraryConfig {
     }
 
     @Bean
-    public GameService gameService(BookLibrary bookLibrary) {
-        return new GameService(bookLibrary);
+    public SaveService saveService() throws IOException {
+        return new SaveService(java.nio.file.Path.of("saves"));
+    }
+
+    @Bean
+    public GameService gameService(BookLibrary bookLibrary, SaveService saveService) {
+        return new GameService(bookLibrary, saveService);
     }
 }

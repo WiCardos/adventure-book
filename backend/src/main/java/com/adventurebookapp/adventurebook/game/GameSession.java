@@ -17,12 +17,23 @@ public class GameSession {
         this.currentSection = findSectionByType(SectionType.BEGIN);
     }
 
+    public static GameSession resumeAt(Book book, int sectionId, int health) {
+        GameSession session = new GameSession(book);
+        session.currentSection = session.findSectionById(sectionId);
+        session.health = health;
+        return session;
+    }
+
     public Section getCurrentSection() {
         return currentSection;
     }
 
     public int getHealth() {
         return health;
+    }
+
+    public String getBookTitle() {
+        return book.title();
     }
 
     public boolean isDead() {

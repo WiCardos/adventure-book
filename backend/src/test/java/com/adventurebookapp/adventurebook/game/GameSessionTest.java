@@ -109,4 +109,13 @@ class GameSessionTest {
 
         assertThat(session.getHealth()).isEqualTo(20);
     }
+
+    @Test
+    void resumeAt_startsAtGivenSectionWithGivenHealth() {
+        GameSession session = GameSession.resumeAt(book(), 2, 6);
+
+        assertThat(session.getCurrentSection()).isEqualTo(MIDDLE);
+        assertThat(session.getHealth()).isEqualTo(6);
+        assertThat(session.isOver()).isFalse();
+    }
 }

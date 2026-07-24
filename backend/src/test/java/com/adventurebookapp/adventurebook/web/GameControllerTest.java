@@ -11,7 +11,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -70,6 +70,47 @@ class GameControllerTest {
         mockMvc.perform(post("/games/bad-id/choices")
                         .contentType("application/json")
                         .content(jsonMapper.writeValueAsString(new ChoiceRequest(2))))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void saveGame_withValidSession_returnsOk() throws Exception {
+        doNothing().when(gameService).saveGame("abc-123");
+
+        mockMvc.perform(post("/games/abc-123/save"))
+                .andExpect(status().isOk());
+
+        verify(gameService).saveGame("abc-123");
+    }
+
+    @Test
+    void saveGame_atInvalidState_returns409() throws Exception {
+        doThrow(new IllegalStateException("Cannot save here")).when(gameService).saveGame("abc-123");
+
+        mockMvc.perform(post("/games/abc-123/save"))
+                .andExpect(status().isConflict());
+    }
+
+    @Test
+    void resumeGame_withExistingSave_returnsSessionAndSection() throws Exception {
+        SectionView section = new SectionView("Middle", List.of(new OptionView("Go", 3)), false, 6, false);
+        when(gameService.resumeGame("Test Book")).thenReturn(new GameStartResult("abc-123", section));
+
+        mockMvc.perform(post("/games/resume")
+                        .contentType("application/json")
+                        .content(jsonMapper.writeValueAsString(new StartGameRequest("Test Book"))))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.sessionId").value("abc-123"))
+                .andExpect(jsonPath("$.section.health").value(6));
+    }
+
+    @Test
+    void resumeGame_withNoExistingSave_returns404() throws Exception {
+        when(gameService.resumeGame("Test Book")).thenThrow(new NoSuchElementException("No save"));
+
+        mockMvc.perform(post("/games/resume")
+                        .contentType("application/json")
+                        .content(jsonMapper.writeValueAsString(new StartGameRequest("Test Book"))))
                 .andExpect(status().isNotFound());
     }
 }
