@@ -4,6 +4,7 @@ import { provideHttpClientTesting, HttpTestingController } from '@angular/common
 import { describe, it, expect, afterEach } from 'vitest';
 import { BookService } from './book.service';
 import { BookSummary } from '../models/book-summary.model';
+import { environment } from '../../environments/environment';
 
 describe('BookService', () => {
   let service: BookService;
@@ -30,7 +31,7 @@ describe('BookService', () => {
       expect(books).toEqual(mockBooks);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/books');
+    const req = httpMock.expectOne(`${environment.apiUrl}/books`);
     expect(req.request.method).toBe('GET');
     req.flush(mockBooks);
   });
@@ -45,7 +46,7 @@ describe('BookService', () => {
     });
 
     const req = httpMock.expectOne(
-      (r) => r.url === 'http://localhost:8080/books' &&
+      (r) => r.url === `${environment.apiUrl}/books` &&
         r.params.get('search') === 'lighthouse' &&
         r.params.get('difficulty') === 'EASY'
     );

@@ -5,6 +5,7 @@ import { describe, it, expect, afterEach } from 'vitest';
 import { GameService } from './game.service';
 import { GameStartResult, SectionView } from '../models/section-view.model';
 import { SavedGame } from '../models/saved-game.model';
+import { environment } from '../../environments/environment';
 
 describe('GameService', () => {
   let service: GameService;
@@ -32,7 +33,7 @@ describe('GameService', () => {
       expect(result).toEqual(mockResult);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/games');
+    const req = httpMock.expectOne(`${environment.apiUrl}/games`);
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual({ title: 'Test Book' });
     req.flush(mockResult);
@@ -45,7 +46,7 @@ describe('GameService', () => {
       expect(section).toEqual(mockSection);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/games/abc-123/choices');
+    const req = httpMock.expectOne(`${environment.apiUrl}/games/abc-123/choices`);
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual({ gotoId: 2 });
     req.flush(mockSection);
@@ -58,7 +59,7 @@ describe('GameService', () => {
       expect(save).toEqual(mockSave);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/saves/Test%20Book');
+    const req = httpMock.expectOne(`${environment.apiUrl}/saves/Test%20Book`);
     expect(req.request.method).toBe('GET');
     req.flush(mockSave);
   });
@@ -73,7 +74,7 @@ describe('GameService', () => {
       expect(result).toEqual(mockResult);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/games/resume');
+    const req = httpMock.expectOne(`${environment.apiUrl}/games/resume`);
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual({ title: 'Test Book' });
     req.flush(mockResult);
@@ -82,7 +83,7 @@ describe('GameService', () => {
   it('saves the current game', () => {
     service.saveGame('abc-123').subscribe();
 
-    const req = httpMock.expectOne('http://localhost:8080/games/abc-123/save');
+    const req = httpMock.expectOne(`${environment.apiUrl}/games/abc-123/save`);
     expect(req.request.method).toBe('POST');
     req.flush(null);
   });
@@ -90,7 +91,7 @@ describe('GameService', () => {
   it('deletes an existing save', () => {
     service.deleteSave('Test Book').subscribe();
 
-    const req = httpMock.expectOne('http://localhost:8080/saves/Test%20Book');
+    const req = httpMock.expectOne(`${environment.apiUrl}/saves/Test%20Book`);
     expect(req.request.method).toBe('DELETE');
     req.flush(null);
   });
