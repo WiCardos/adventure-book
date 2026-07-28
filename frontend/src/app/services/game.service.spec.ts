@@ -4,6 +4,7 @@ import { provideHttpClientTesting, HttpTestingController } from '@angular/common
 import { describe, it, expect, afterEach } from 'vitest';
 import { GameService } from './game.service';
 import { GameStartResult, SectionView } from '../models/section-view.model';
+import { SavedGame } from '../models/saved-game.model';
 
 describe('GameService', () => {
   let service: GameService;
@@ -48,5 +49,49 @@ describe('GameService', () => {
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual({ gotoId: 2 });
     req.flush(mockSection);
+  });
+
+  it('checks for an existing save', () => {
+    const mockSave: SavedGame = { title: 'Test Book', sectionId: 2, health: 6 };
+
+    service.checkSave('Test Book').subscribe((save) => {
+      expect(save).toEqual(mockSave);
+    });
+
+    const req = httpMock.expectOne('http://localhost:8080/saves/Test%20Book');
+    expect(req.request.method).toBe('GET');
+    req.flush(mockSave);
+  });
+
+  it('resumes a game with the given title', () => {
+    const mockResult: GameStartResult = {
+      sessionId: 'abc-123',
+      section: { text: 'Middle', options: [], isEnding: false, health: 6, isDead: false },
+    };
+
+    service.resumeGame('Test Book').subscribe((result) => {
+      expect(result).toEqual(mockResult);
+    });
+
+    const req = httpMock.expectOne('http://localhost:8080/games/resume');
+    expect(req.request.method).toBe('POST');
+    expect(req.request.body).toEqual({ title: 'Test Book' });
+    req.flush(mockResult);
+  });
+
+  it('saves the current game', () => {
+    service.saveGame('abc-123').subscribe();
+
+    const req = httpMock.expectOne('http://localhost:8080/games/abc-123/save');
+    expect(req.request.method).toBe('POST');
+    req.flush(null);
+  });
+
+  it('deletes an existing save', () => {
+    service.deleteSave('Test Book').subscribe();
+
+    const req = httpMock.expectOne('http://localhost:8080/saves/Test%20Book');
+    expect(req.request.method).toBe('DELETE');
+    req.flush(null);
   });
 });

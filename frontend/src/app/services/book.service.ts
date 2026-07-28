@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BookSummary } from '../models/book-summary.model';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class BookService {
-  private readonly baseUrl = 'http://localhost:8080/books';
+  private readonly baseUrl = `${environment.apiUrl}`;
 
   constructor(private http: HttpClient) {}
 
@@ -17,6 +18,6 @@ export class BookService {
     if (difficulty) {
       params = params.set('difficulty', difficulty);
     }
-    return this.http.get<BookSummary[]>(this.baseUrl, { params });
+    return this.http.get<BookSummary[]>(`${this.baseUrl}/books`, { params });
   }
 }

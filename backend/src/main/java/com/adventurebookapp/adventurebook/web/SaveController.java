@@ -27,4 +27,9 @@ public class SaveController {
     @ResponseStatus(org.springframework.http.HttpStatus.NOT_FOUND)
     public void handleNotFound() {
     }
+
+    @DeleteMapping("/{title}")
+    public void deleteSave(@PathVariable String title) {
+        gameService.deleteSave(title);
+    }
 }

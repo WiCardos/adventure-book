@@ -1,4 +1,15 @@
-@if (section(); as current) {
+@if (checkingForSave()) {
+  <p>Loading...</p>
+} @else if (savedGame(); as save) {
+  <div class="resume-choice">
+    <h2>Continue your adventure?</h2>
+    <p>You have a saved game in progress (health: {{ save.health }}/20).</p>
+    <div class="resume-buttons">
+      <button class="option-button" (click)="resumeSavedGame()">Resume</button>
+      <button class="option-button secondary" (click)="startOver()">Start Over</button>
+    </div>
+  </div>
+} @else if (section(); as current) {
   <div class="game-header">
     <button (click)="backToLibrary()">← Back to Library</button>
     <span class="health-display">❤ {{ current.health }} / 20</span>
@@ -16,6 +27,11 @@
         @for (option of current.options; track option.gotoId) {
           <button class="option-button" (click)="choose(option.gotoId)">
             {{ option.description }}
+          </button>
+        }
+        @if (!isAtBeginning()) {
+          <button class="save-button" [class.saved]="justSaved()" (click)="saveProgress()">
+            {{ justSaved() ? 'Saved!' : 'Save Progress' }}
           </button>
         }
       </div>

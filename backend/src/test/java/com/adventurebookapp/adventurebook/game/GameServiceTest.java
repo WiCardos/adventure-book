@@ -115,4 +115,11 @@ class GameServiceTest {
 
         verify(mockSaveService).delete("Test Book");
     }
+
+    @Test
+    void deleteSave_delegatesToSaveService() {
+        gameService.deleteSave("Test Book");
+
+        verify(mockSaveService).delete("Test Book");
+    }
 }

@@ -88,4 +88,8 @@ public class GameService {
     public Optional<SavedGame> checkSave(String title) throws IOException {
         return saveService.load(title);
     }
+
+    public void deleteSave(String title) {
+        saveService.delete(title);
+    }
 }
