@@ -5,6 +5,7 @@ import com.adventurebookapp.adventurebook.game.SaveService;
 import com.adventurebookapp.adventurebook.loading.BookLibrary;
 import com.adventurebookapp.adventurebook.loading.BookLoader;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,8 +43,8 @@ public class BookLibraryConfig {
     }
 
     @Bean
-    public SaveService saveService() throws IOException {
-        return new SaveService(java.nio.file.Path.of("saves"));
+    public SaveService saveService(@Value("${app.saves-directory:./saves}") String savesDirectory) throws IOException {
+        return new SaveService(java.nio.file.Path.of(savesDirectory));
     }
 
     @Bean

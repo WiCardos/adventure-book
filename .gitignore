@@ -1,0 +1,6 @@
+### Saves folder ###
+saves/
+
+### OS ###
+.DS_Store
+Thumbs.db
