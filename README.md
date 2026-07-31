@@ -39,7 +39,7 @@ The API starts on `http://localhost:8080`. Confirm it's running by visiting `htt
 
 Game and save endpoints (`POST /games`, `POST /games/{sessionId}/choices`, `POST /games/{sessionId}/save`, `POST /games/resume`, `GET /saves/{title}`, `DELETE /saves/{title}`) require a JSON body or path parameters and are best tested via Postman, curl, or through the frontend itself rather than a browser address bar.
 
-Saved games are written to a `saves/` folder created next to wherever the backend runs from (a plain JSON file per book, not a database — see Design notes).
+Saved games are written to a `saves/` folder created next to wherever the backend process's working directory is at startup (in practice, the project root when run via IntelliJ's default configuration, or `backend/` if run via `cd backend && ./mvnw spring-boot:run`) — a plain JSON file per book, not a database (see Design notes). This location is configurable via the `app.saves-directory` property in `backend/src/main/resources/application.properties`.
 
 ### Backend tests
 
@@ -64,6 +64,20 @@ The application opens on `http://localhost:4200`. **The backend must already be 
 cd frontend
 npm test
 ```
+
+## Running with Docker
+
+As an alternative to running the backend and frontend manually (see above), the entire stack can be started with a single command:
+
+```bash
+docker compose up --build
+```
+
+This builds both the backend (Java 21, multi-stage build producing a slim JRE-based image) and the frontend (Angular build compiled to static files, served via nginx) and starts them together. The frontend is available at `http://localhost:4200`, the backend at `http://localhost:8080`, matching the manual setup exactly.
+
+Saved games are stored in a named Docker volume (`saves-data`), so progress survives `docker compose down` / `docker compose up` cycles — it is only lost if the volume itself is explicitly removed (`docker compose down -v`).
+
+Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or an equivalent Docker engine) running locally.
 
 ## Design notes
 
