@@ -77,6 +77,12 @@ This builds both the backend (Java 21, multi-stage build producing a slim JRE-ba
 
 Saved games are stored in a named Docker volume (`saves-data`), so progress survives `docker compose down` / `docker compose up` cycles — it is only lost if the volume itself is explicitly removed (`docker compose down -v`).
 
+## Continuous Integration
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) runs automatically on every push or pull request targeting `main`: it runs the full backend test suite (`./mvnw test`) and the full frontend test suite (`npm test -- --watch=false`) in parallel, independent jobs. A failing test in either half fails the workflow, giving immediate feedback before anything is merged.
+
+Docker image builds are not currently part of CI — tests only, for now. Building and (optionally) publishing the images built by `docker-compose.yml` would be a natural next step.
+
 Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or an equivalent Docker engine) running locally.
 
 ## Design notes
