@@ -8,6 +8,9 @@ import org.springframework.cache.annotation.Cacheable;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,26 +19,31 @@ public class BookLibrary {
 
     private final BookLoader bookLoader;
     private final BookValidator bookValidator;
-    private final List<String> bookResourcePaths;
+    private final Path booksDirectory;
 
-    public BookLibrary(BookLoader bookLoader, BookValidator bookValidator, List<String> bookResourcePaths) {
+    public BookLibrary(BookLoader bookLoader, BookValidator bookValidator, Path booksDirectory) throws IOException {
         this.bookLoader = bookLoader;
         this.bookValidator = bookValidator;
-        this.bookResourcePaths = bookResourcePaths;
+        this.booksDirectory = booksDirectory;
+        Files.createDirectories(booksDirectory);
     }
 
     @Cacheable("books")
     public List<Book> getAllBooks() {
         List<Book> books = new ArrayList<>();
-        for (String path : bookResourcePaths) {
-            try (InputStream stream = getClass().getResourceAsStream(path)) {
-                Book book = bookLoader.load(stream);
-                if (bookValidator.validate(book).valid()) {
-                    books.add(book);
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(booksDirectory, "*.json")) {
+            for (Path path : stream) {
+                try (InputStream in = Files.newInputStream(path)) {
+                    Book book = bookLoader.load(in);
+                    if (bookValidator.validate(book).valid()) {
+                        books.add(book);
+                    }
+                } catch (RuntimeException | IOException e) {
+                    log.warn("Failed to load book from {}: {}", path, e.getMessage());
                 }
-            } catch (RuntimeException | IOException e) {
-                log.warn("Failed to load book from {}: {}", path, e.getMessage());
             }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to read books directory", e);
         }
         return books;
     }
@@ -58,4 +66,11 @@ public class BookLibrary {
     private boolean matchesDifficulty(Book book, Difficulty difficulty) {
         return difficulty == null || book.difficulty() == difficulty;
     }
+
+    /*
+    @CacheEvict("books")
+public void addBook(Book book) {
+    // write the book's JSON to the books/ directory
+}
+     */
 }

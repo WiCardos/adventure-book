@@ -2,8 +2,13 @@ package com.adventurebookapp.adventurebook.loading;
 
 import com.adventurebookapp.adventurebook.model.*;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -25,15 +30,23 @@ class BookLibraryTest {
         return new Book(title, author, difficulty, List.of(VALID_BEGIN, VALID_END));
     }
 
-    @Test
-    void getAllBooks_excludesInvalidBooks() {
-        Book validBook = book("Valid Book", "Author", Difficulty.EASY);
+    @TempDir
+    Path tempDir;
 
+    @BeforeEach
+    void setUp() throws IOException {
+        Files.writeString(tempDir.resolve("a.json"), "{}");
+        Files.writeString(tempDir.resolve("b.json"), "{}");
+    }
+
+    @Test
+    void getAllBooks_excludesInvalidBooks() throws IOException {
+        Book validBook = book("Valid Book", "Author", Difficulty.EASY);
         Book invalidBook = new Book("Invalid Book", "Author", Difficulty.EASY, List.of()); // no BEGIN, no END
 
         when(mockLoader.load(any())).thenReturn(validBook, invalidBook);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/test-book.json", "/test-book.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.getAllBooks();
 
@@ -41,35 +54,30 @@ class BookLibraryTest {
     }
 
     @Test
-    void getAllBooks_loadsRealBookFiles_excludingInvalidOnes() {
+    void getAllBooks_loadsRealBookFiles_excludingInvalidOnes() throws IOException {
+        copyTestResourceInto(tempDir, "test-valid-book.json");
+        copyTestResourceInto(tempDir, "test-empty-book.json");
+
         BookLibrary library = new BookLibrary(
                 new BookLoader(),
                 new BookValidator(),
-                List.of(
-                        "/books/crystal-caverns.json",
-                        "/books/dragon-quest.json",
-                        "/books/pirates-jade-sea.json",
-                        "/books/the-prisoner.json",
-                        "/books/clockwork-heist.json",
-                        "/books/whispering-lighthouse.json"
-                )
+                tempDir
         );
 
         List<Book> books = library.getAllBooks();
 
-        assertThat(books).isNotEmpty();
-        assertThat(books).hasSize(2);
-        books.forEach(book -> assertThat(book.title()).isNotBlank());
+        assertThat(books).hasSize(1);
+        assertThat(books.get(0).title()).isNotBlank();
     }
 
     @Test
-    void findBooks_bySearchTerm_matchesTitleCaseInsensitive() {
+    void findBooks_bySearchTerm_matchesTitleCaseInsensitive() throws IOException {
         Book bookOne = book("A Book with lighthouse in the title", "Sailor", Difficulty.EASY);
         Book bookTwo = book("A Book with no light in the house, in the title", "Fisherman", Difficulty.MEDIUM);
 
         when(mockLoader.load(any())).thenReturn(bookOne, bookTwo);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/a.json", "/b.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.findBooks("LIGHTHOUSE", null);
 
@@ -77,13 +85,13 @@ class BookLibraryTest {
     }
 
     @Test
-    void findBooks_bySearchTerm_matchesAuthorCaseInsensitive() {
+    void findBooks_bySearchTerm_matchesAuthorCaseInsensitive() throws IOException {
         Book bookOne = book("A Book with lighthouse in the title", "Sailor", Difficulty.EASY);
         Book bookTwo = book("A Book with no light in the house, in the title", "Fisherman", Difficulty.MEDIUM);
 
         when(mockLoader.load(any())).thenReturn(bookOne, bookTwo);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/a.json", "/b.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.findBooks("fish", null);
 
@@ -91,13 +99,13 @@ class BookLibraryTest {
     }
 
     @Test
-    void findBooks_byDifficulty_matchesEASYDifficulty() {
+    void findBooks_byDifficulty_matchesEASYDifficulty() throws IOException {
         Book bookOne = book("A Book with lighthouse in the title", "Sailor", Difficulty.EASY);
         Book bookTwo = book("A Book with no light in the house, in the title", "Fisherman", Difficulty.MEDIUM);
 
         when(mockLoader.load(any())).thenReturn(bookOne, bookTwo);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/a.json", "/b.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.findBooks("", Difficulty.EASY);
 
@@ -105,13 +113,13 @@ class BookLibraryTest {
     }
 
     @Test
-    void findBooks_bySearchTermAndDifficulty_matchesTitleCaseInsensitive() {
+    void findBooks_bySearchTermAndDifficulty_matchesTitleCaseInsensitive() throws IOException {
         Book bookOne = book("A Book with lighthouse in the title", "Sailor", Difficulty.EASY);
         Book bookTwo = book("A Book with no light in the house, in the title", "Fisherman", Difficulty.MEDIUM);
 
         when(mockLoader.load(any())).thenReturn(bookOne, bookTwo);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/a.json", "/b.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.findBooks("light", Difficulty.EASY);
 
@@ -119,16 +127,22 @@ class BookLibraryTest {
     }
 
     @Test
-    void findBooks_noParams_returnsAll() {
+    void findBooks_noParams_returnsAll() throws IOException {
         Book bookOne = book("A Book with lighthouse in the title", "Sailor", Difficulty.EASY);
         Book bookTwo = book("A Book with no light in the house, in the title", "Fisherman", Difficulty.MEDIUM);
 
         when(mockLoader.load(any())).thenReturn(bookOne, bookTwo);
 
-        BookLibrary library = new BookLibrary(mockLoader, realValidator, List.of("/a.json", "/b.json"));
+        BookLibrary library = new BookLibrary(mockLoader, realValidator, tempDir);
 
         List<Book> result = library.findBooks("", null);
 
         assertThat(result).containsExactly(bookOne,bookTwo);
+    }
+
+    private void copyTestResourceInto(Path tempDir, String resourceName) throws IOException {
+        try (var in = getClass().getResourceAsStream("/" + resourceName)) {
+            Files.copy(in, tempDir.resolve(resourceName));
+        }
     }
 }

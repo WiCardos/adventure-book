@@ -1,0 +1,21 @@
+{
+  "title": "Test Valid Book",
+  "author": "Test Author",
+  "difficulty": "EASY",
+  "sections": [
+    {
+      "id": 1,
+      "text": "The beginning.",
+      "type": "BEGIN",
+      "options": [
+        { "description": "Continue", "gotoId": 2 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The end.",
+      "type": "END",
+      "options": []
+    }
+  ]
+}

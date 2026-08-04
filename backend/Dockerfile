@@ -16,6 +16,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 ENV APP_SAVES_DIRECTORY=/app/saves
+ENV APP_BOOKS_DIRECTORY=/app/books
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

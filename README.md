@@ -37,6 +37,8 @@ cd backend
 
 The API starts on `http://localhost:8080`. Confirm it's running by visiting `http://localhost:8080/books` in a browser — it should return a JSON list of available books.
 
+**Note for IntelliJ users:** the default Spring Boot run configuration's working directory may default to the project root rather than `backend/`, which breaks the relative `../books` / `./saves` paths below. If `/books` returns an empty list when running via IntelliJ's Run button (as opposed to `./mvnw spring-boot:run`, or Docker, which are unaffected), open the run configuration (Run → Edit Configurations... → "Modify options" → enable "Working directory") and set it explicitly to the `backend` folder. This is a one-time, per-machine fix.
+
 Game and save endpoints (`POST /games`, `POST /games/{sessionId}/choices`, `POST /games/{sessionId}/save`, `POST /games/resume`, `GET /saves/{title}`, `DELETE /saves/{title}`) require a JSON body or path parameters and are best tested via Postman, curl, or through the frontend itself rather than a browser address bar.
 
 Saved games are written to a `saves/` folder created next to wherever the backend process's working directory is at startup (in practice, the project root when run via IntelliJ's default configuration, or `backend/` if run via `cd backend && ./mvnw spring-boot:run`) — a plain JSON file per book, not a database (see Design notes). This location is configurable via the `app.saves-directory` property in `backend/src/main/resources/application.properties`.
