@@ -11,7 +11,7 @@ An interactive adventure book application built for the Pictet Technologies tech
 - **Objective 2 (start a game, basic navigation, no consequences):** complete.
 - **Objective 3 (consequences, health, game over):** complete. Health starts at 10, capped at 20, and reaching 0 ends the game as a death — distinct from reaching a real ending. Dying takes priority over an ending reached on the same move.
 - **Objective 4 (save the user's progression):** complete. Progress is saved on demand (not automatically) via a "Save Progress" button, one save per book, persisted as a JSON file on disk. Reaching an ending or dying automatically deletes that book's save. Starting a book that has an existing save prompts the player to resume or start over; starting over deletes the stale save.
-- **Objectives 5:** not attempted yet.
+- **Objective 5 (add new books):** complete (backend). Uploading a `.json` file via `POST /books` (multipart) validates the file is parseable JSON, runs it through the same `BookValidator` rules used for the built-in books, and rejects duplicate titles. Returns `201` on success, `400` with specific validation errors for a structurally invalid book, `400` for a non-JSON/unparseable file, and `409` for a duplicate title. A successful upload evicts the book-list cache so it appears immediately. Frontend upload form not yet built.
 
 ## Project structure
 

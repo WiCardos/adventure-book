@@ -2,6 +2,7 @@ package com.adventurebookapp.adventurebook.loading;
 
 import com.adventurebookapp.adventurebook.model.*;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
+import com.adventurebookapp.adventurebook.validation.InvalidBookException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -12,6 +13,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.mockito.ArgumentMatchers.any;
@@ -68,6 +70,12 @@ class BookLibraryTest {
 
         assertThat(books).hasSize(1);
         assertThat(books.get(0).title()).isNotBlank();
+    }
+
+    private void copyTestResourceInto(Path tempDir, String resourceName) throws IOException {
+        try (var in = getClass().getResourceAsStream("/" + resourceName)) {
+            Files.copy(in, tempDir.resolve(resourceName));
+        }
     }
 
     @Test
@@ -140,9 +148,34 @@ class BookLibraryTest {
         assertThat(result).containsExactly(bookOne,bookTwo);
     }
 
-    private void copyTestResourceInto(Path tempDir, String resourceName) throws IOException {
-        try (var in = getClass().getResourceAsStream("/" + resourceName)) {
-            Files.copy(in, tempDir.resolve(resourceName));
-        }
+    @Test
+    void addBook_withValidBook_writesFileAndIncludesItInGetAllBooks(@TempDir Path tempDir) throws IOException {
+        BookLibrary library = new BookLibrary(new BookLoader(), new BookValidator(), tempDir);
+        Book newBook = book("New Book", "Author", Difficulty.EASY);
+
+        library.addBook(newBook);
+
+        assertThat(library.getAllBooks()).containsExactly(newBook);
+    }
+
+    @Test
+    void addBook_withDuplicateTitle_throwsDuplicateBookException(@TempDir Path tempDir) throws IOException {
+        BookLibrary library = new BookLibrary(new BookLoader(), new BookValidator(), tempDir);
+        Book newBook = book("New Book", "Author", Difficulty.EASY);
+        library.addBook(newBook);
+
+        assertThatThrownBy(() -> library.addBook(newBook))
+                .isInstanceOf(DuplicateBookException.class);
+    }
+
+    @Test
+    void addBook_withInvalidBook_throwsInvalidBookExceptionAndDoesNotWriteFile(@TempDir Path tempDir) throws IOException {
+        BookLibrary library = new BookLibrary(new BookLoader(), new BookValidator(), tempDir);
+        Book invalidBook = new Book("Bad Book", "Author", Difficulty.EASY, List.of()); // no BEGIN, no END
+
+        assertThatThrownBy(() -> library.addBook(invalidBook))
+                .isInstanceOf(InvalidBookException.class);
+
+        assertThat(library.getAllBooks()).isEmpty();
     }
 }

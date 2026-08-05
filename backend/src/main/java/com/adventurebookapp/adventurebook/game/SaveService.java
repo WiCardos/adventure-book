@@ -1,5 +1,6 @@
 package com.adventurebookapp.adventurebook.game;
 
+import com.adventurebookapp.adventurebook.util.FileNaming;
 import tools.jackson.databind.json.JsonMapper;
 
 import java.io.IOException;
@@ -41,7 +42,6 @@ public class SaveService {
     }
 
     private Path pathFor(String title) {
-        String filename = title.toLowerCase().replaceAll("\\s+", "_") + ".json";
-        return saveDirectory.resolve(filename);
+        return saveDirectory.resolve(FileNaming.sanitize(title));
     }
 }

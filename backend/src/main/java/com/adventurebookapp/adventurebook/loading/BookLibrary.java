@@ -2,9 +2,14 @@ package com.adventurebookapp.adventurebook.loading;
 
 import com.adventurebookapp.adventurebook.model.Book;
 import com.adventurebookapp.adventurebook.model.Difficulty;
+import com.adventurebookapp.adventurebook.util.FileNaming;
 import com.adventurebookapp.adventurebook.validation.BookValidator;
+import com.adventurebookapp.adventurebook.validation.InvalidBookException;
+import com.adventurebookapp.adventurebook.validation.ValidationResult;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import tools.jackson.databind.json.JsonMapper;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,6 +22,7 @@ import java.util.List;
 @Slf4j
 public class BookLibrary {
 
+    private final JsonMapper jsonMapper = JsonMapper.builder().build();
     private final BookLoader bookLoader;
     private final BookValidator bookValidator;
     private final Path booksDirectory;
@@ -67,10 +73,25 @@ public class BookLibrary {
         return difficulty == null || book.difficulty() == difficulty;
     }
 
-    /*
     @CacheEvict("books")
-public void addBook(Book book) {
-    // write the book's JSON to the books/ directory
-}
-     */
+    public void addBook(Book book) {
+        ValidationResult result = bookValidator.validate(book);
+        if (!result.valid()) {
+            throw new InvalidBookException(result.errors());
+        }
+
+        boolean titleExists = getAllBooks().stream()
+                .anyMatch(existing -> existing.title().equals(book.title()));
+        if (titleExists) {
+            throw new DuplicateBookException(book.title());
+        }
+
+        String filename = FileNaming.sanitize(book.title());
+        Path file = booksDirectory.resolve(filename);
+        try {
+            Files.writeString(file, jsonMapper.writeValueAsString(book));
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to write book file", e);
+        }
+    }
 }
